@@ -8,19 +8,21 @@ export type ArinValue<T> = { "$": T };
  * Cleaned data returned by ARIN
  */
 export default class ArinData {
-    registrationDate?: string;
+    registrationDate?: number;
     ref?: string;
     handle?: string;
     name?: string;
     org?: Org;
     originASes?: { originAS: string };
+    updateDate?: number;
 
     constructor(source: any) {
-        this.registrationDate = bodyOf(source["registrationDate"]) as string;
+        this.registrationDate = Date.parse(bodyOf(source["registrationDate"]) as string);
         this.ref = bodyOf(source["ref"]) as string;
         this.handle = bodyOf(source["handle"]) as string;
         this.name = bodyOf(source["name"]) as string;
         this.org = new Org(source.orgRef);
+        this.updateDate = Date.parse(bodyOf(source["updateDate"]) as string);
     }
 }
 

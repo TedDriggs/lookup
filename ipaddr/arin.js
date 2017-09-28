@@ -7,11 +7,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
  */
 class ArinData {
     constructor(source) {
-        this.registrationDate = bodyOf(source["registrationDate"]);
+        this.registrationDate = Date.parse(bodyOf(source["registrationDate"]));
         this.ref = bodyOf(source["ref"]);
         this.handle = bodyOf(source["handle"]);
         this.name = bodyOf(source["name"]);
         this.org = new Org(source.orgRef);
+        this.updateDate = Date.parse(bodyOf(source["updateDate"]));
     }
 }
 exports.default = ArinData;
