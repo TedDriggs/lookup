@@ -5,8 +5,14 @@ import * as ripe from './ripe';
 export default function (context, req) {
     context.log('JavaScript HTTP trigger function processed a request.');
 
-    if (req.query.ipaddr) {
-        Promise.all([arin.searchIP(req.query.ipaddr), ripe.searchIP(req.query.ipaddr)]).then(items => {
+    const ipaddr = req.query.ipaddr;
+
+    if (ipaddr) {
+        // Send searches out to all databases
+        Promise.all([
+            arin.searchIP(ipaddr), 
+            ripe.searchIP(ipaddr, context)]
+        ).then(items => {
             context.res = {
                 body: {
                     arin: items[0],
