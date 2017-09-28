@@ -1,0 +1,77 @@
+{
+    "net": {
+        "@xmlns": {
+            "ns3": "http://www.arin.net/whoisrws/netref/v2",
+            "ns2": "http://www.arin.net/whoisrws/rdns/v1",
+            "$": "http://www.arin.net/whoisrws/core/v1"
+        },
+        "@inaccuracyReportUrl": "https://www.arin.net/public/whoisinaccuracy/index.xhtml",
+        "@termsOfUse": "https://www.arin.net/whois_tou.html",
+        "registrationDate": {
+            "$": "1997-11-05T00:00:00-05:00"
+        },
+        "ref": {
+            "$": "https://whois.arin.net/rest/net/NET-192-149-252-0-1"
+        },
+        "endAddress": {
+            "$": "192.149.252.255"
+        },
+        "handle": {
+            "$": "NET-192-149-252-0-1"
+        },
+        "name": {
+            "$": "ARIN-CHA"
+        },
+        "netBlocks": {
+            "netBlock": {
+                "cidrLength": {
+                    "$": "24"
+                },
+                "endAddress": {
+                    "$": "192.149.252.255"
+                },
+                "description": {
+                    "$": "Direct Assignment"
+                },
+                "type": {
+                    "$": "DS"
+                },
+                "startAddress": {
+                    "$": "192.149.252.0"
+                }
+            }
+        },
+        "originASes": {
+            "originAS": {
+                "$": "AS10745"
+            }
+        },
+        "resources": {
+            "@inaccuracyReportUrl": "https://www.arin.net/public/whoisinaccuracy/index.xhtml",
+            "@termsOfUse": "https://www.arin.net/whois_tou.html",
+            "limitExceeded": {
+                "@limit": "256",
+                "$": "false"
+            }
+        },
+        "orgRef": {
+            "@handle": "ARINOPS",
+            "@name": "ARIN Operations",
+            "$": "https://whois.arin.net/rest/org/ARINOPS"
+        },
+        "parentNetRef": {
+            "@handle": "NET-192-0-0-0-0",
+            "@name": "NET192",
+            "$": "https://whois.arin.net/rest/net/NET-192-0-0-0-0"
+        },
+        "startAddress": {
+            "$": "192.149.252.0"
+        },
+        "updateDate": {
+            "$": "2015-07-15T11:11:35-04:00"
+        },
+        "version": {
+            "$": "4"
+        }
+    }
+}
