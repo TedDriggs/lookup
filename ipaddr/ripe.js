@@ -5,21 +5,18 @@ function searchIP(addr, context) {
     return node_fetch_1.default(`http://rest.db.ripe.net/ripe/inetnum/${addr}.json`)
         .then(res => res.json())
         .then(data => {
-        if (context && data.errormessages && data.errormessages.errormessage) {
-            context.warn(data.errormessages.errormessage);
-        }
-        return data;
-    })
-        .then(data => {
         if (context) {
             context.log(data);
         }
-        return new RipeData(data);
+        return new RipeData(data, context);
     });
 }
 exports.searchIP = searchIP;
 class RipeData {
-    constructor(_) {
+    constructor(source, context) {
+        if (source.errormessages.errormessage && context) {
+            context.log(source.errormessages.errormessage);
+        }
     }
 }
 exports.RipeData = RipeData;

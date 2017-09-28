@@ -4,23 +4,18 @@ export function searchIP(addr: string, context?: any): Promise<RipeData> {
     return fetch(`http://rest.db.ripe.net/ripe/inetnum/${addr}.json`)
         .then(res => res.json())
         .then(data => {
-            if (context && data.errormessages && data.errormessages.errormessage) {
-                context.warn(data.errormessages.errormessage);
-            }
-
-            return data;
-        })
-        .then(data => {
             if (context) {
                 context.log(data);
             }
 
-            return new RipeData(data);
+            return new RipeData(data, context);
         });
 }
 
 export class RipeData {
-    constructor(_: any) {
-
+    constructor(source: any, context?: any) {
+        if (source.errormessages.errormessage && context) {
+            context.log(source.errormessages.errormessage);
+        }
     }
 }
