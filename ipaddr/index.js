@@ -1,16 +1,16 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const node_fetch_1 = require("node-fetch");
-const arin_1 = require("./arin");
+const arin = require("./arin");
+const ripe = require("./ripe");
 function default_1(context, req) {
     context.log('JavaScript HTTP trigger function processed a request.');
     if (req.query.ipaddr) {
-        node_fetch_1.default(`http://whois.arin.net/rest/ip/${req.query.ipaddr}.json`)
-            .then(res => res.json())
-            .then(body => {
-            context.log(body);
+        Promise.all([arin.searchIP(req.query.ipaddr), ripe.searchIP(req.query.ipaddr)]).then(items => {
             context.res = {
-                body: new arin_1.default(body.net),
+                body: {
+                    arin: items[0],
+                    ripe: items[1],
+                },
                 isRaw: true,
             };
             context.done();

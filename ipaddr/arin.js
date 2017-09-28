@@ -2,10 +2,17 @@
 // See `arin-ipaddr-sample.json` for an example of the input data for this
 // module.
 Object.defineProperty(exports, "__esModule", { value: true });
+const node_fetch_1 = require("node-fetch");
+function searchIP(addr) {
+    return node_fetch_1.default(`http://whois.arin.net/rest/ip/${addr}.json`)
+        .then(res => res.json())
+        .then(data => new Data(data.net));
+}
+exports.searchIP = searchIP;
 /**
  * Cleaned data returned by ARIN
  */
-class ArinData {
+class Data {
     constructor(source) {
         this.registrationDate = Date.parse(bodyOf(source["registrationDate"]));
         this.ref = bodyOf(source["ref"]);
@@ -15,7 +22,7 @@ class ArinData {
         this.updateDate = Date.parse(bodyOf(source["updateDate"]));
     }
 }
-exports.default = ArinData;
+exports.Data = Data;
 class Org {
     constructor(source) {
         this.name = source["@name"];

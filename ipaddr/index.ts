@@ -1,21 +1,22 @@
 import fetch from 'node-fetch';
-import ArinData from './arin';
+import * as arin from './arin';
+import * as ripe from './ripe';
 
 export default function (context, req) {
     context.log('JavaScript HTTP trigger function processed a request.');
 
     if (req.query.ipaddr) {
-        fetch(`http://whois.arin.net/rest/ip/${req.query.ipaddr}.json`)
-            .then(res => res.json())
-            .then(body => {
-                context.log(body);
-                context.res = {
-                    body: new ArinData(body.net),
-                    isRaw: true,
-                };
+        Promise.all([arin.searchIP(req.query.ipaddr), ripe.searchIP(req.query.ipaddr)]).then(items => {
+            context.res = {
+                body: {
+                    arin: items[0],
+                    ripe: items[1],
+                },
+                isRaw: true,
+            };
 
-                context.done();
-            });
+            context.done();
+        });
     } else {
         context.res = {
             status: 400,

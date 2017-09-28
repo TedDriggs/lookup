@@ -1,13 +1,21 @@
 // See `arin-ipaddr-sample.json` for an example of the input data for this
 // module.
 
+import fetch from 'node-fetch';
+
 /** ARIN representation of XML elements */
 export type ArinValue<T> = { "$": T };
+
+export function searchIP(addr: string): Promise<Data> {
+    return fetch(`http://whois.arin.net/rest/ip/${addr}.json`)
+        .then(res => res.json())
+        .then(data => new Data(data.net));
+}
 
 /**
  * Cleaned data returned by ARIN
  */
-export default class ArinData {
+export class Data {
     registrationDate?: number;
     ref?: string;
     handle?: string;
