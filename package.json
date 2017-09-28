@@ -1,0 +1,8 @@
+{
+    "name": "addr-lookup",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "node-fetch": "^1.7.3"
+    }
+}
