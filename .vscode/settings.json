@@ -1,0 +1,9 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        
+        // Hide generated JS files, as we should only be writing TypeScript
+        "ipaddr/*.js": true
+    }
+}
