@@ -1,21 +1,21 @@
-var fetch = require('node-fetch');
-
-module.exports = function (context, req) {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const node_fetch_1 = require("node-fetch");
+function default_1(context, req) {
     context.log('JavaScript HTTP trigger function processed a request.');
-
     if (req.query.ipaddr) {
-        fetch(`http://whois.arin.net/rest/ip/${req.query.ipaddr}.json`)
+        node_fetch_1.default(`http://whois.arin.net/rest/ip/${req.query.ipaddr}.json`)
             .then(res => res.json())
             .then(body => {
-                context.log(body);
-                context.res = {
-                    body,
-                    isRaw: true,
-                };
-
-                context.done();
-            });
-    } else {
+            context.log(body);
+            context.res = {
+                body,
+                isRaw: true,
+            };
+            context.done();
+        });
+    }
+    else {
         context.res = {
             status: 400,
             body: `{
@@ -23,7 +23,8 @@ module.exports = function (context, req) {
             }`,
             isRaw: true,
         };
-
         context.done();
     }
-};
+}
+exports.default = default_1;
+;

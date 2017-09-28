@@ -12,10 +12,10 @@ export class ArinData {
     originASes?: { originAS: string };
 
     constructor(source: any) {
-        this.registrationDate = bodyOf(source["registrationDate"]);
-        this.ref = bodyOf(source["ref"]);
-        this.handle = bodyOf(source["handle"]);
-        this.name = bodyOf(source["name"]);
+        this.registrationDate = bodyOf(source["registrationDate"]) as string;
+        this.ref = bodyOf(source["ref"]) as string;
+        this.handle = bodyOf(source["handle"]) as string;
+        this.name = bodyOf(source["name"]) as string;
     }
 }
 

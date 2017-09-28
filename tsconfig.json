@@ -1,7 +1,8 @@
 {
     "compilerOptions": {
         "module": "commonjs",
-        "moduleResolution": "node"
+        "moduleResolution": "node",
+        "target": "es2016"
     },
     "exclude": [
         "node_modules"
