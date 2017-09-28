@@ -8,7 +8,9 @@ export default function (context, req) {
         fetch(`http://whois.arin.net/rest/ip/${req.query.ipaddr}.json`)
             .then(res => res.json())
             .then(body => {
+                context.log(typeof body);
                 context.log(body);
+                context.log(body["registrationDate"]);
                 context.res = {
                     body: new ArinData(body),
                     isRaw: true,
