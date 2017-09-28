@@ -11,7 +11,7 @@ class ArinData {
         this.name = bodyOf(source["name"]);
     }
 }
-exports.ArinData = ArinData;
+exports.default = ArinData;
 function bodyOf(prop) {
     if (prop) {
         return prop["$"];

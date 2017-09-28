@@ -4,7 +4,7 @@ export type ArinValue<T> = { "$": T };
 /**
  * Cleaned data returned by ARIN
  */
-export class ArinData {
+export default class ArinData {
     registrationDate?: string;
     ref?: string;
     handle?: string;

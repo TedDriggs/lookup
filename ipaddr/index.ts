@@ -1,4 +1,5 @@
 import fetch from 'node-fetch';
+import ArinData from './arin';
 
 export default function (context, req) {
     context.log('JavaScript HTTP trigger function processed a request.');
@@ -9,7 +10,7 @@ export default function (context, req) {
             .then(body => {
                 context.log(body);
                 context.res = {
-                    body,
+                    body: new ArinData(body),
                     isRaw: true,
                 };
 
@@ -19,7 +20,7 @@ export default function (context, req) {
         context.res = {
             status: 400,
             body: `{
-                error_message: "IP address is required"
+                "error_message": "IP address is required"
             }`,
             isRaw: true,
         };
