@@ -10,7 +10,7 @@ function default_1(context, req) {
             .then(body => {
             context.log(body);
             context.res = {
-                body: new arin_1.default(body),
+                body: new arin_1.default(body.net),
                 isRaw: true,
             };
             context.done();
