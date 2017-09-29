@@ -19,7 +19,7 @@ export function searchIP(addr: string, context?: any): Promise<Data | null> {
 
 export class Data {
     constructor(source: RipeResponse, context?: any) {
-        if (source.errormessages.errormessage && context) {
+        if (source.errormessages && source.errormessages.errormessage && context) {
             context.log(source.errormessages.errormessage);
         }
     }

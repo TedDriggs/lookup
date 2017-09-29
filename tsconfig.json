@@ -3,7 +3,8 @@
     "compilerOptions": {
         "module": "commonjs",
         "moduleResolution": "node",
-        "target": "es2016"
+        "target": "es2016",
+        "strictNullChecks": true
     },
     "exclude": [
         "node_modules"

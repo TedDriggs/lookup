@@ -18,7 +18,7 @@ function searchIP(addr, context) {
 exports.searchIP = searchIP;
 class Data {
     constructor(source, context) {
-        if (source.errormessages.errormessage && context) {
+        if (source.errormessages && source.errormessages.errormessage && context) {
             context.log(source.errormessages.errormessage);
         }
     }
