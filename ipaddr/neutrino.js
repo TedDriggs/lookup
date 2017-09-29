@@ -13,13 +13,7 @@ function searchIP(addr, searchMode = SearchMode.Sample) {
             .then(res => res.json());
     }
     else {
-        const foo = require('../neutrino-ipaddr-sample.json');
-        try {
-            served = Promise.resolve(JSON.parse(foo));
-        }
-        catch (e) {
-            throw new Error(foo);
-        }
+        served = Promise.resolve(require('../neutrino-ipaddr-sample.json'));
     }
     return served.then((data) => {
         return Object.assign({}, data, { 

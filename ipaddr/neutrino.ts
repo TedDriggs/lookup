@@ -12,12 +12,7 @@ export function searchIP(addr: string, searchMode: SearchMode = SearchMode.Sampl
         served = fetch(`https://neutrinoapi.com/host-reputation?host=${addr}&output-format=json&output-case=camel&user-id=ehdv&api-key=rlGNlGpXScEvv6q2Y9sEIuzIXRZgkD3bkd5uY1aL1NbBB42k`)
         .then(res => res.json())
     } else {
-        const foo = require('../neutrino-ipaddr-sample.json');
-        try {
-            served = Promise.resolve(JSON.parse(foo));
-        } catch (e) {
-            throw new Error(foo);
-        }
+        served = Promise.resolve(require('../neutrino-ipaddr-sample.json'));
     }
 
     return served.then((data: Data) => {
