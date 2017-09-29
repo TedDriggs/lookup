@@ -18,7 +18,7 @@ class Data {
         this.ref = bodyOf(source["ref"]);
         this.handle = bodyOf(source["handle"]);
         this.name = bodyOf(source["name"]);
-        this.org = new Org(source.orgRef);
+        this.org = new Org(source.orgRef || source.customerRef);
         this.updateDate = Date.parse(bodyOf(source["updateDate"]));
     }
 }

@@ -1,11 +1,26 @@
 import fetch from 'node-fetch';
 import * as arin from './arin';
 import * as ripe from './ripe';
+import * as neutrino from './neutrino';
 
 export default function (context, req) {
     context.log('JavaScript HTTP trigger function processed a request.');
 
-    const ipaddr = req.query.ipaddr;
+    const { ipaddr, threat } = req.query;
+
+    if (!ipaddr) {
+        context.res = {
+            status: 400,
+            body: `{
+                "error_message": "IP address is required"
+            }`,
+            isRaw: true,
+        };
+
+        context.done();
+    } else {
+
+    }
 
     if (ipaddr) {
         // Send searches out to all databases
@@ -24,14 +39,11 @@ export default function (context, req) {
             context.done();
         });
     } else {
-        context.res = {
-            status: 400,
-            body: `{
-                "error_message": "IP address is required"
-            }`,
-            isRaw: true,
-        };
-
-        context.done();
+        
     }
 };
+
+interface Rsp {
+    whois: arin.Data;
+    threat?: neutrino.Data;
+}

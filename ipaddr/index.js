@@ -4,7 +4,19 @@ const arin = require("./arin");
 const ripe = require("./ripe");
 function default_1(context, req) {
     context.log('JavaScript HTTP trigger function processed a request.');
-    const ipaddr = req.query.ipaddr;
+    const { ipaddr, threat } = req.query;
+    if (!ipaddr) {
+        context.res = {
+            status: 400,
+            body: `{
+                "error_message": "IP address is required"
+            }`,
+            isRaw: true,
+        };
+        context.done();
+    }
+    else {
+    }
     if (ipaddr) {
         // Send searches out to all databases
         Promise.all([
@@ -22,14 +34,6 @@ function default_1(context, req) {
         });
     }
     else {
-        context.res = {
-            status: 400,
-            body: `{
-                "error_message": "IP address is required"
-            }`,
-            isRaw: true,
-        };
-        context.done();
     }
 }
 exports.default = default_1;

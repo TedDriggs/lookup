@@ -29,7 +29,7 @@ export class Data {
         this.ref = bodyOf(source["ref"]) as string;
         this.handle = bodyOf(source["handle"]) as string;
         this.name = bodyOf(source["name"]) as string;
-        this.org = new Org(source.orgRef);
+        this.org = new Org(source.orgRef || source.customerRef);
         this.updateDate = Date.parse(bodyOf(source["updateDate"]) as string);
     }
 }

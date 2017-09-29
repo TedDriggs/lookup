@@ -1,0 +1,1302 @@
+{
+    "isListed": false,
+    "lists": [
+        {
+            "isListed": false,
+            "responseTime": 41,
+            "listHost": "0spam.fusionzero.com",
+            "listRating": 3,
+            "listName": "0spam DNSBL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 41,
+            "listHost": "0spam-killlist.fusionzero.com",
+            "listRating": 3,
+            "listName": "0spam KillList",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 7,
+            "listHost": "combined.abuse.ch",
+            "listRating": 3,
+            "listName": "abuse.ch combined zone",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 7,
+            "listHost": "drone.abuse.ch",
+            "listRating": 3,
+            "listName": "abuse.ch FastFlux Tracker",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 6,
+            "listHost": "spam.abuse.ch",
+            "listRating": 3,
+            "listName": "abuse.ch spam blacklist",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 5,
+            "listHost": "httpbl.abuse.ch",
+            "listRating": 3,
+            "listName": "abuse.ch Web abuse Tracker",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 208,
+            "listHost": "ipbl.zeustracker.abuse.ch",
+            "listRating": 3,
+            "listName": "abuse.ch ZeuS Tracker IP",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 121,
+            "listHost": "rbl.abuse.ro",
+            "listRating": 3,
+            "listName": "abuse.ro IP RBL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 315,
+            "listHost": "spam.dnsbl.anonmails.de",
+            "listRating": 3,
+            "listName": "anonmails.de DNSBL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 242,
+            "listHost": "dnsbl.anticaptcha.net",
+            "listRating": 3,
+            "listName": "AntiCaptcha.NET IPv4",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 349,
+            "listHost": "orvedb.aupads.org",
+            "listRating": 3,
+            "listName": "ANTISPAM-UFRJ orvedb",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 349,
+            "listHost": "rsbl.aupads.org",
+            "listRating": 3,
+            "listName": "ANTISPAM-UFRJ rsbl",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 803,
+            "listHost": "aspews.ext.sorbs.net",
+            "listRating": 3,
+            "listName": "ASPEWS Listings",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 250,
+            "listHost": "ips.backscatterer.org",
+            "listRating": 2,
+            "listName": "Backscatterer.org",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 242,
+            "listHost": "b.barracudacentral.org",
+            "listRating": 1,
+            "listName": "Barracuda Reputation Block List",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 243,
+            "listHost": "bb.barracudacentral.org",
+            "listRating": 1,
+            "listName": "Barracuda Reputation Block List (for SpamAssassin)",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 988,
+            "listHost": "list.bbfh.org",
+            "listRating": 3,
+            "listName": "BBFH Level 1",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 805,
+            "listHost": "l1.bbfh.ext.sorbs.net",
+            "listRating": 3,
+            "listName": "BBFH Level 1 (@SORBS)",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 806,
+            "listHost": "l2.bbfh.ext.sorbs.net",
+            "listRating": 3,
+            "listName": "BBFH Level 2 (@SORBS)",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 805,
+            "listHost": "l3.bbfh.ext.sorbs.net",
+            "listRating": 3,
+            "listName": "BBFH Level 3 (@SORBS)",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 805,
+            "listHost": "l4.bbfh.ext.sorbs.net",
+            "listRating": 3,
+            "listName": "BBFH Level 4 (@SORBS)",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 52,
+            "listHost": "list.blogspambl.com",
+            "listRating": 3,
+            "listName": "Blog Spam Blacklist",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 19,
+            "listHost": "bsb.empty.us",
+            "listRating": 3,
+            "listName": "Blog Spam Blocklist (empty.us)",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 18,
+            "listHost": "bsb.spamlookup.net",
+            "listRating": 3,
+            "listName": "Blog Spam Blocklist (spamlookup.net)",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 182,
+            "listHost": "blacklist.sci.kun.nl",
+            "listRating": 3,
+            "listName": "C&CZ's own black list",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 243,
+            "listHost": "cbl.anti-spam.org.cn",
+            "listRating": 3,
+            "listName": "CASA CBL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 250,
+            "listHost": "cblplus.anti-spam.org.cn",
+            "listRating": 3,
+            "listName": "CASA CBL+",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 244,
+            "listHost": "cblless.anti-spam.org.cn",
+            "listRating": 3,
+            "listName": "CASA CBL-",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 250,
+            "listHost": "cdl.anti-spam.org.cn",
+            "listRating": 3,
+            "listName": "CASA CDL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 8,
+            "listHost": "cbl.abuseat.org",
+            "listRating": 2,
+            "listName": "CBL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 5004,
+            "listHost": "rbl.choon.net",
+            "listRating": 3,
+            "listName": "choon.net IPv4 DNSBL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 9,
+            "listHost": "bogons.cymru.com",
+            "listRating": 3,
+            "listName": "Cymru Bogon List",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 35,
+            "listHost": "v4.fullbogons.cymru.com",
+            "listRating": 3,
+            "listName": "Cymru Fullbogon IPv4 List",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 651,
+            "listHost": "tor.dan.me.uk",
+            "listRating": 3,
+            "listName": "dan.me.uk (all tor nodes)",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 651,
+            "listHost": "torexit.dan.me.uk",
+            "listRating": 3,
+            "listName": "dan.me.uk (only tor exit nodes)",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 187,
+            "listHost": "rbl.dns-servicios.com",
+            "listRating": 3,
+            "listName": "DNS-SERVICIOS RBL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 63,
+            "listHost": "dnsbl.mags.net",
+            "listRating": 3,
+            "listName": "dnsbl.mags.net",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 302,
+            "listHost": "dnsbl.rv-soft.info",
+            "listRating": 3,
+            "listName": "dnsbl.rv-soft.info",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 124,
+            "listHost": "vote.drbl.caravan.ru",
+            "listRating": 3,
+            "listName": "DRBL vote node caravan.ru",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 5000,
+            "listHost": "vote.drbldf.dsbl.ru",
+            "listRating": 3,
+            "listName": "DRBL vote node dsbl.ru",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 93,
+            "listHost": "vote.drbl.gremlin.ru",
+            "listRating": 3,
+            "listName": "DRBL vote node gremlin.ru",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 124,
+            "listHost": "work.drbl.caravan.ru",
+            "listRating": 3,
+            "listName": "DRBL work node caravan.ru",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 5001,
+            "listHost": "work.drbldf.dsbl.ru",
+            "listRating": 3,
+            "listName": "DRBL work node dsbl.ru",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 95,
+            "listHost": "work.drbl.gremlin.ru",
+            "listRating": 3,
+            "listName": "DRBL work node gremlin.ru",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 423,
+            "listHost": "bl.drmx.org",
+            "listRating": 3,
+            "listName": "DrMX",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 284,
+            "listHost": "dnsbl.dronebl.org",
+            "listRating": 3,
+            "listName": "DroneBL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 829,
+            "listHost": "rbl.efnet.org",
+            "listRating": 3,
+            "listName": "EFnet RBL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 253,
+            "listHost": "rbl.efnetrbl.org",
+            "listRating": 3,
+            "listName": "EFnet RBL mirror",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 248,
+            "listHost": "tor.efnet.org",
+            "listRating": 3,
+            "listName": "EFnet TOR",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 236,
+            "listHost": "rbl.fasthosts.co.uk",
+            "listRating": 3,
+            "listName": "Fasthosts RBL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 38,
+            "listHost": "fnrbl.fast.net",
+            "listRating": 3,
+            "listName": "fnrbl.fast.net",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 159,
+            "listHost": "hil.habeas.com",
+            "listRating": 3,
+            "listName": "Habeas Infringer List",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 189,
+            "listHost": "spamrbl.imp.ch",
+            "listRating": 3,
+            "listName": "ImproWare IP based spamlist",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 184,
+            "listHost": "wormrbl.imp.ch",
+            "listRating": 3,
+            "listName": "ImproWare IP based wormlist",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 202,
+            "listHost": "dnsbl.inps.de",
+            "listRating": 2,
+            "listName": "inps.de-DNSBL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 8,
+            "listHost": "rbl.interserver.net",
+            "listRating": 3,
+            "listName": "InterServer BL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 607,
+            "listHost": "mail-abuse.blacklist.jippg.org",
+            "listRating": 3,
+            "listName": "JIPPG's RBL Project (mail-abuse Listings)",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 150,
+            "listHost": "dnsbl.justspam.org",
+            "listRating": 2,
+            "listName": "JustSpam.org",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 6,
+            "listHost": "dnsbl.kempt.net",
+            "listRating": 3,
+            "listName": "Kempt.net DNS Black List",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 1277,
+            "listHost": "spamlist.or.kr",
+            "listRating": 3,
+            "listName": "KISA-RBL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 356,
+            "listHost": "relays.bl.kundenserver.de",
+            "listRating": 3,
+            "listName": "kundenserver.de relays",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 1624,
+            "listHost": "spamguard.leadmon.net",
+            "listRating": 3,
+            "listName": "Leadmon.Net's SpamGuard Listings (LNSG)",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 342,
+            "listHost": "dnsbl.madavi.de",
+            "listRating": 3,
+            "listName": "Madavi:BL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 192,
+            "listHost": "bl.mailspike.net",
+            "listRating": 3,
+            "listName": "Mailspike Blacklist",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 186,
+            "listHost": "z.mailspike.net",
+            "listRating": 3,
+            "listName": "Mailspike Zero-hour Data",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 337,
+            "listHost": "bl.mav.com.br",
+            "listRating": 3,
+            "listName": "MAV BL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 153,
+            "listHost": "cidr.bl.mcafee.com",
+            "listRating": 3,
+            "listName": "McAfee RBL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 56,
+            "listHost": "rbl.megarbl.net",
+            "listRating": 3,
+            "listName": "MegaRBL.net",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 82,
+            "listHost": "combined.rbl.msrbl.net",
+            "listRating": 3,
+            "listName": "MSRBL combined",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 101,
+            "listHost": "images.rbl.msrbl.net",
+            "listRating": 3,
+            "listName": "MSRBL images",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 101,
+            "listHost": "phishing.rbl.msrbl.net",
+            "listRating": 3,
+            "listName": "MSRBL phishing",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 100,
+            "listHost": "spam.rbl.msrbl.net",
+            "listRating": 3,
+            "listName": "MSRBL spam",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 101,
+            "listHost": "virus.rbl.msrbl.net",
+            "listRating": 3,
+            "listName": "MSRBL virus",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 100,
+            "listHost": "web.rbl.msrbl.net",
+            "listRating": 3,
+            "listName": "MSRBL web",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 43,
+            "listHost": "relays.nether.net",
+            "listRating": 3,
+            "listName": "nether.net (relays)",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 42,
+            "listHost": "unsure.nether.net",
+            "listRating": 3,
+            "listName": "nether.net (unsure)",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 273,
+            "listHost": "ix.dnsbl.manitu.net",
+            "listRating": 2,
+            "listName": "NiX Spam DNSBL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 80,
+            "listHost": "nospam.ant.pl",
+            "listRating": 3,
+            "listName": "nospam.ant.pl",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 114,
+            "listHost": "dyn.nszones.com",
+            "listRating": 3,
+            "listName": "nsZones.com Dyn",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 138,
+            "listHost": "sbl.nszones.com",
+            "listRating": 3,
+            "listName": "nsZones.com SBL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 116,
+            "listHost": "bl.nszones.com",
+            "listRating": 3,
+            "listName": "nsZones.com SBL+Dyn",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 5005,
+            "listHost": "dnsbl.openresolvers.org",
+            "listRating": 3,
+            "listName": "Open Resolver Check",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 8,
+            "listHost": "rbl.orbitrbl.com",
+            "listRating": 3,
+            "listName": "ORBITrbl",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 328,
+            "listHost": "netblock.pedantic.org",
+            "listRating": 3,
+            "listName": "Pedantic.org netblock",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 328,
+            "listHost": "spam.pedantic.org",
+            "listRating": 3,
+            "listName": "Pedantic.org spam",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 251,
+            "listHost": "pofon.foobar.hu",
+            "listRating": 3,
+            "listName": "pofon.foobar.hu",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 115,
+            "listHost": "rbl.polarcomm.net",
+            "listRating": 3,
+            "listName": "Polar Communications Admin RBL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 121,
+            "listHost": "psbl.surriel.com",
+            "listRating": 2,
+            "listName": "PSBL (Passive Spam Block List)",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 986,
+            "listHost": "all.rbl.jp",
+            "listRating": 3,
+            "listName": "RBL.JP all",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 981,
+            "listHost": "short.rbl.jp",
+            "listRating": 3,
+            "listName": "RBL.JP short",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 981,
+            "listHost": "virus.rbl.jp",
+            "listRating": 3,
+            "listName": "RBL.JP virus",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 477,
+            "listHost": "rbl.schulte.org",
+            "listRating": 3,
+            "listName": "rbl.schulte.org",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 110,
+            "listHost": "rbl.talkactive.net",
+            "listRating": 3,
+            "listName": "rbl.talkactive.net",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 275,
+            "listHost": "access.redhawk.org",
+            "listRating": 3,
+            "listName": "Redhawk.org",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 42,
+            "listHost": "dnsbl.rizon.net",
+            "listRating": 3,
+            "listName": "Rizon RBL/DNSBL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 202,
+            "listHost": "dynip.rothen.com",
+            "listRating": 3,
+            "listName": "rothen.com DynIp",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 125,
+            "listHost": "dul.ru",
+            "listRating": 3,
+            "listName": "Russian Dial-up User List",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 113,
+            "listHost": "dnsbl.rymsho.ru",
+            "listRating": 3,
+            "listName": "Rymsho's DNSBL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 43,
+            "listHost": "all.s5h.net",
+            "listRating": 3,
+            "listName": "s5h.net IPv4 RBL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 59,
+            "listHost": "tor.dnsbl.sectoor.de",
+            "listRating": 3,
+            "listName": "sectoor TOR blacklist",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 32,
+            "listHost": "exitnodes.tor.dnsbl.sectoor.de",
+            "listRating": 3,
+            "listName": "sectoor TOR blacklist (exit nodes)",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 169,
+            "listHost": "bl.score.senderscore.com",
+            "listRating": 3,
+            "listName": "SenderScore",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 261,
+            "listHost": "dnsbl.sorbs.net",
+            "listRating": 2,
+            "listName": "SORBS Aggregate zone",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 255,
+            "listHost": "problems.dnsbl.sorbs.net",
+            "listRating": 2,
+            "listName": "SORBS Aggregate zone (problems)",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 249,
+            "listHost": "proxies.dnsbl.sorbs.net",
+            "listRating": 2,
+            "listName": "SORBS Aggregate zone (proxies)",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 238,
+            "listHost": "relays.dnsbl.sorbs.net",
+            "listRating": 2,
+            "listName": "SORBS Aggregate zone (relays)",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 239,
+            "listHost": "safe.dnsbl.sorbs.net",
+            "listRating": 2,
+            "listName": "SORBS Aggregate zone (safe)",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 233,
+            "listHost": "dul.dnsbl.sorbs.net",
+            "listRating": 2,
+            "listName": "SORBS Dynamic IP Addresses",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 231,
+            "listHost": "zombie.dnsbl.sorbs.net",
+            "listRating": 2,
+            "listName": "SORBS hijacked networks",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 243,
+            "listHost": "block.dnsbl.sorbs.net",
+            "listRating": 2,
+            "listName": "SORBS Hosts demanding never be tested by SORBS",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 237,
+            "listHost": "escalations.dnsbl.sorbs.net",
+            "listRating": 2,
+            "listName": "SORBS netblocks of spam supporting service providers",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 248,
+            "listHost": "http.dnsbl.sorbs.net",
+            "listRating": 2,
+            "listName": "SORBS Open HTTP Proxies",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 245,
+            "listHost": "misc.dnsbl.sorbs.net",
+            "listRating": 2,
+            "listName": "SORBS Open other Proxies",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 238,
+            "listHost": "smtp.dnsbl.sorbs.net",
+            "listRating": 2,
+            "listName": "SORBS Open SMTP relays",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 243,
+            "listHost": "socks.dnsbl.sorbs.net",
+            "listRating": 2,
+            "listName": "SORBS Open SOCKS Proxies",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 238,
+            "listHost": "spam.dnsbl.sorbs.net",
+            "listRating": 2,
+            "listName": "SORBS Spamhost (any time)",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 237,
+            "listHost": "recent.spam.dnsbl.sorbs.net",
+            "listRating": 2,
+            "listName": "SORBS Spamhost (last 28 days)",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 237,
+            "listHost": "new.spam.dnsbl.sorbs.net",
+            "listRating": 2,
+            "listName": "SORBS Spamhost (last 48 hours)",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 240,
+            "listHost": "old.spam.dnsbl.sorbs.net",
+            "listRating": 2,
+            "listName": "SORBS Spamhost (last year)",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 229,
+            "listHost": "web.dnsbl.sorbs.net",
+            "listRating": 2,
+            "listName": "SORBS Vulnerable formmailers",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 42,
+            "listHost": "korea.services.net",
+            "listRating": 3,
+            "listName": "South Korean Network Blocking List",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 15,
+            "listHost": "backscatter.spameatingmonkey.net",
+            "listRating": 2,
+            "listName": "Spam Eating Monkey SEM-BACKSCATTER",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 14,
+            "listHost": "badnets.spameatingmonkey.net",
+            "listRating": 2,
+            "listName": "Spam Eating Monkey SEM-BADNETS",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 16,
+            "listHost": "bl.spameatingmonkey.net",
+            "listRating": 2,
+            "listName": "Spam Eating Monkey SEM-BLACK",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 14,
+            "listHost": "netbl.spameatingmonkey.net",
+            "listRating": 2,
+            "listName": "Spam Eating Monkey SEM-NETBLACK",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 341,
+            "listHost": "singlebl.spamgrouper.com",
+            "listRating": 3,
+            "listName": "Spam Grouper IP only list",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 368,
+            "listHost": "netblockbl.spamgrouper.com",
+            "listRating": 3,
+            "listName": "Spam Grouper Net block list",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 82,
+            "listHost": "all.spam-rbl.fr",
+            "listRating": 3,
+            "listName": "Spam-RBL.fr",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 5003,
+            "listHost": "bl.spamcannibal.org",
+            "listRating": 2,
+            "listName": "SpamCannibal",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 178,
+            "listHost": "dnsbl.spam-champuru.livedoor.com",
+            "listRating": 3,
+            "listName": "SpamChampuru DNSBL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 160,
+            "listHost": "bl.spamcop.net",
+            "listRating": 1,
+            "listName": "SpamCop Blocking List",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 121,
+            "listHost": "sbl.spamhaus.org",
+            "listRating": 1,
+            "listName": "Spamhaus SBL Spamhaus Block List",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 116,
+            "listHost": "xbl.spamhaus.org",
+            "listRating": 1,
+            "listName": "Spamhaus XBL Exploits Block List",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 12,
+            "listHost": "feb.spamlab.com",
+            "listRating": 3,
+            "listName": "SpamLab FEB",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 33,
+            "listHost": "rbl.spamlab.com",
+            "listRating": 3,
+            "listName": "SpamLab RBL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 126,
+            "listHost": "all.spamrats.com",
+            "listRating": 3,
+            "listName": "SpamRATS! all",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 120,
+            "listHost": "dyna.spamrats.com",
+            "listRating": 3,
+            "listName": "SpamRATS! Dyna",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 121,
+            "listHost": "noptr.spamrats.com",
+            "listRating": 3,
+            "listName": "SpamRATS! NoPtr",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 128,
+            "listHost": "spam.spamrats.com",
+            "listRating": 3,
+            "listName": "SpamRATS! Spam",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 219,
+            "listHost": "spamsources.fabel.dk",
+            "listRating": 3,
+            "listName": "spamsources.fabel.dk",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 204,
+            "listHost": "bl.spamstinks.com",
+            "listRating": 3,
+            "listName": "SpamStinks.com DNSBL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 218,
+            "listHost": "badhost.stopspam.org",
+            "listRating": 3,
+            "listName": "StopSpam.org badhost",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 177,
+            "listHost": "block.stopspam.org",
+            "listRating": 3,
+            "listName": "StopSpam.org block",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 178,
+            "listHost": "dnsbl.stopspam.org",
+            "listRating": 3,
+            "listName": "StopSpam.org dnsbl",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 74,
+            "listHost": "dul.pacifier.net",
+            "listRating": 3,
+            "listName": "StopSpam.org dul",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 94,
+            "listHost": "multi.surbl.org",
+            "listRating": 1,
+            "listName": "SURBL multi (Combined SURBL list)",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 85,
+            "listHost": "xs.surbl.org",
+            "listRating": 1,
+            "listName": "SURBL xs (snowshoe and pill domains)",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 98,
+            "listHost": "dnsrbl.swinog.ch",
+            "listRating": 2,
+            "listName": "Swinog DNSRBL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 935,
+            "listHost": "opm.tornevall.org",
+            "listRating": 3,
+            "listName": "TornevallNET DNSBL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 69,
+            "listHost": "rbl2.triumf.ca",
+            "listRating": 3,
+            "listName": "TRIUMF.ca DNSBL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 175,
+            "listHost": "truncate.gbudb.net",
+            "listRating": 2,
+            "listName": "truncate.gbudb.net",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 222,
+            "listHost": "dnsbl-0.uceprotect.net",
+            "listRating": 2,
+            "listName": "UCEPROTECT Level 0",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 219,
+            "listHost": "dnsbl-1.uceprotect.net",
+            "listRating": 2,
+            "listName": "UCEPROTECT Level 1",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 220,
+            "listHost": "dnsbl-2.uceprotect.net",
+            "listRating": 2,
+            "listName": "UCEPROTECT Level 2",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 212,
+            "listHost": "dnsbl-3.uceprotect.net",
+            "listRating": 2,
+            "listName": "UCEPROTECT Level 3",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 135,
+            "listHost": "ubl.unsubscore.com",
+            "listRating": 3,
+            "listName": "Unsubscribe Blacklist UBL",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 814,
+            "listHost": "virbl.dnsbl.bit.nl",
+            "listRating": 2,
+            "listName": "Virbl",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 12,
+            "listHost": "dnsbl.webequipped.com",
+            "listRating": 3,
+            "listName": "WebEquipped.com block list",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 100,
+            "listHost": "blacklist.woody.ch",
+            "listRating": 3,
+            "listName": "Woody's SMTP Blacklist IPv4",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 72,
+            "listHost": "db.wpbl.info",
+            "listRating": 2,
+            "listName": "WPBL - Weighted Private Block List",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 273,
+            "listHost": "bl.blocklist.de",
+            "listRating": 3,
+            "listName": "www.blocklist.de",
+            "txtRecord": ""
+        },
+        {
+            "isListed": false,
+            "responseTime": 3,
+            "listHost": "dnsbl.zapbl.net",
+            "listRating": 3,
+            "listName": "ZapBL DNSRBL",
+            "txtRecord": ""
+        }
+    ],
+    "listCount": 0
+}
