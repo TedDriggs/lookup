@@ -31,6 +31,15 @@ function default_1(context, req) {
                 isRaw: true,
             };
             context.done();
+        }).catch(reason => {
+            context.res = {
+                body: {
+                    error_message: "Something went wrong",
+                    reason,
+                },
+                isRaw: true,
+            };
+            context.done();
         });
     }
     else {
