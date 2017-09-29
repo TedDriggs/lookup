@@ -2,10 +2,14 @@
     "name": "addr-lookup",
     "version": "0.1.0",
     "private": true,
+    "scripts": {
+        "watch": "./node_modules/typescript/bin/tsc -w"
+    },
     "dependencies": {
         "node-fetch": "^1.7.3"
     },
     "devDependencies": {
-        "@types/node-fetch": "^1.6.7"
+        "@types/node-fetch": "^1.6.7",
+        "typescript": "^2.5.3"
     }
 }
