@@ -6,7 +6,7 @@ import fetch from 'node-fetch';
 /** ARIN representation of XML elements */
 export type ArinValue<T> = { "$": T };
 
-export function searchIP(addr: string): Promise<Data> {
+export function searchIP(addr: string): Promise<Data | null> {
     return fetch(`http://whois.arin.net/rest/ip/${addr}.json`)
         .then(res => res.json())
         .then(data => new Data(data.net));
