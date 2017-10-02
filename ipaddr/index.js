@@ -39,13 +39,14 @@ exports.default = default_1;
 /**
  * Perform a search for an IP address.
  *
- * @param addr The address to search for
+ * @param ipaddr The address to search for
  * @param threatMode Whether or not to really search for threat information
  */
-function search(addr, threatMode) {
-    const who = arin.searchIP(addr);
-    const threat = neutrino.searchIP(addr, threatMode);
+function search(ipaddr, threatMode) {
+    const who = arin.searchIP(ipaddr);
+    const threat = neutrino.searchIP(ipaddr, threatMode);
     return Promise.all([who, threat]).then((items) => ({
+        ipaddr,
         whois: items[0],
         threat: items[1],
     }));

@@ -44,20 +44,22 @@ export default function (context, req) {
 /**
  * Perform a search for an IP address.
  * 
- * @param addr The address to search for
+ * @param ipaddr The address to search for
  * @param threatMode Whether or not to really search for threat information
  */
-function search(addr: string, threatMode: neutrino.SearchMode): Promise<Rsp> {
-    const who = arin.searchIP(addr);
-    const threat = neutrino.searchIP(addr, threatMode);
+function search(ipaddr: string, threatMode: neutrino.SearchMode): Promise<Rsp> {
+    const who = arin.searchIP(ipaddr);
+    const threat = neutrino.searchIP(ipaddr, threatMode);
 
     return Promise.all([who, threat]).then((items: [arin.Data | null, neutrino.Data | null]) => ({
+        ipaddr,
         whois: items[0],
         threat: items[1],
     }));
 }
 
 interface Rsp {
+    ipaddr: string;
     whois: arin.Data | null;
     threat: neutrino.Data | null;
 }
