@@ -23,11 +23,11 @@ export function searchIP(addr: string, searchMode: SearchMode = SearchMode.Sampl
         if (!parsed.match(EXTRAHOP)) {
             if (context) context.log(`${parsed.toString()} wasn't an ExtraHop address; amending risk score`);
 
-            served = served.then(data => {
-                data.isListed = true;
-                data.listCount = Math.floor(Math.random() * 162);
-                return data;
-            });
+            served = served.then(data => ({
+                ...data,
+                isListed: true,
+                listCount: Math.floor(Math.random() * 162),
+            }));
         } else {
             context.log(`${parsed.toString()} was an ExtraHop address; not altering risk`)
         }
