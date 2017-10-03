@@ -10,6 +10,7 @@
     },
     "devDependencies": {
         "@types/node-fetch": "^1.6.7",
+        "ipaddr.js": "^1.5.2",
         "typescript": "^2.5.3"
     }
 }

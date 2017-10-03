@@ -1,9 +1,12 @@
 import fetch from 'node-fetch';
+import ipaddr from 'ipaddr.js';
 
 export enum SearchMode {
     Sample = "sample",
     Real = "real",
 }
+
+const EXTRAHOP = ipaddr.parseCIDR("208.79.144.48/28");
 
 export function searchIP(addr: string, searchMode: SearchMode = SearchMode.Sample): Promise<Data | null> {
     let served: Promise<Data>;
@@ -12,20 +15,32 @@ export function searchIP(addr: string, searchMode: SearchMode = SearchMode.Sampl
         served = fetch(`https://neutrinoapi.com/host-reputation?host=${addr}&output-format=json&output-case=camel&user-id=ehdv&api-key=rlGNlGpXScEvv6q2Y9sEIuzIXRZgkD3bkd5uY1aL1NbBB42k`)
         .then(res => res.json())
     } else {
+        const parsed = ipaddr.parse(addr);
+
         served = Promise.resolve(require('../neutrino-ipaddr-sample.json'));
+
+        // XXX for the demo, the outside world is scary
+        if (!parsed.match(EXTRAHOP)) {
+            served = served.then(data => {
+                data.isListed = true;
+                data.listCount = Math.floor(Math.random() * 162);
+                return data;
+            });
+        }
     }
 
-    return served.then((data: Data) => {
+    return served.then(data => {
         return {
             ...data,
             // XXX replace with a real threat score
-            score: data.lists.filter(l => l.isListed).length / data.lists.length
+            score: data.listCount / data.lists.length
         }
     });
 }
 
 export interface Data {
     isListed: boolean;
+    listCount: number;
     lists: ThreatListReport[];
     score: number;
 }

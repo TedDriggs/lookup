@@ -1,11 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const node_fetch_1 = require("node-fetch");
+const ipaddr_js_1 = require("ipaddr.js");
 var SearchMode;
 (function (SearchMode) {
     SearchMode["Sample"] = "sample";
     SearchMode["Real"] = "real";
 })(SearchMode = exports.SearchMode || (exports.SearchMode = {}));
+const EXTRAHOP = ipaddr_js_1.default.parseCIDR("208.79.144.48/28");
 function searchIP(addr, searchMode = SearchMode.Sample) {
     let served;
     if (searchMode === SearchMode.Real) {
@@ -13,12 +15,21 @@ function searchIP(addr, searchMode = SearchMode.Sample) {
             .then(res => res.json());
     }
     else {
+        const parsed = ipaddr_js_1.default.parse(addr);
         served = Promise.resolve(require('../neutrino-ipaddr-sample.json'));
+        // XXX for the demo, the outside world is scary
+        if (!parsed.match(EXTRAHOP)) {
+            served = served.then(data => {
+                data.isListed = true;
+                data.listCount = Math.floor(Math.random() * 162);
+                return data;
+            });
+        }
     }
-    return served.then((data) => {
+    return served.then(data => {
         return Object.assign({}, data, { 
             // XXX replace with a real threat score
-            score: data.lists.filter(l => l.isListed).length / data.lists.length });
+            score: data.listCount / data.lists.length });
     });
 }
 exports.searchIP = searchIP;

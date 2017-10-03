@@ -1,6 +1,7 @@
 {
     "compileOnSave": true,
     "compilerOptions": {
+        "allowSyntheticDefaultImports": true,
         "module": "commonjs",
         "moduleResolution": "node",
         "target": "es2016",
