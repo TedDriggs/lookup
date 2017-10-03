@@ -1,5 +1,5 @@
 import fetch from 'node-fetch';
-import ipaddr from 'ipaddr.js';
+const ipaddr = require('ipaddr.js');
 import * as arin from './arin';
 import * as ripe from './ripe';
 import * as neutrino from './neutrino';
