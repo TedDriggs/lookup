@@ -1,12 +1,12 @@
 import fetch from 'node-fetch';
-import ipaddr from 'ipaddr.js';
+import ipaddr from './ipaddr-node';
 
 export enum SearchMode {
     Sample = "sample",
     Real = "real",
 }
 
-const EXTRAHOP = ipaddr.parseCIDR("208.79.144.48/28");
+const EXTRAHOP = (ipaddr as any).parseCIDR("208.79.144.48/28");
 
 export function searchIP(addr: string, searchMode: SearchMode = SearchMode.Sample): Promise<Data | null> {
     let served: Promise<Data>;
@@ -15,7 +15,7 @@ export function searchIP(addr: string, searchMode: SearchMode = SearchMode.Sampl
         served = fetch(`https://neutrinoapi.com/host-reputation?host=${addr}&output-format=json&output-case=camel&user-id=ehdv&api-key=rlGNlGpXScEvv6q2Y9sEIuzIXRZgkD3bkd5uY1aL1NbBB42k`)
         .then(res => res.json())
     } else {
-        const parsed = ipaddr.parse(addr);
+        const parsed = (ipaddr as any).parse(addr);
 
         served = Promise.resolve(require('../neutrino-ipaddr-sample.json'));
 
