@@ -17,7 +17,7 @@ function default_1(context, req) {
         context.done();
     }
     else {
-        search(ipaddr, threat).then(body => {
+        search(ipaddr, threat, context).then(body => {
             context.res = {
                 body,
                 isRaw: true,
@@ -43,9 +43,9 @@ exports.default = default_1;
  * @param ipaddr The address to search for
  * @param threatMode Whether or not to really search for threat information
  */
-function search(ipaddr, threatMode) {
+function search(ipaddr, threatMode, context) {
     const who = arin.searchIP(ipaddr);
-    const threat = neutrino.searchIP(ipaddr, threatMode);
+    const threat = neutrino.searchIP(ipaddr, threatMode, context);
     return Promise.all([who, threat]).then((items) => ({
         ipaddr,
         whois: items[0],

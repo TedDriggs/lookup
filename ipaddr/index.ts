@@ -20,7 +20,7 @@ export default function (context, req) {
 
         context.done();
     } else {
-        search(ipaddr, threat).then(body => {
+        search(ipaddr, threat, context).then(body => {
             context.res = {
                 body,
                 isRaw: true,
@@ -48,9 +48,9 @@ export default function (context, req) {
  * @param ipaddr The address to search for
  * @param threatMode Whether or not to really search for threat information
  */
-function search(ipaddr: string, threatMode: neutrino.SearchMode): Promise<Rsp> {
+function search(ipaddr: string, threatMode: neutrino.SearchMode, context?: any): Promise<Rsp> {
     const who = arin.searchIP(ipaddr);
-    const threat = neutrino.searchIP(ipaddr, threatMode);
+    const threat = neutrino.searchIP(ipaddr, threatMode, context);
 
     return Promise.all([who, threat]).then((items: [arin.Data | null, neutrino.Data | null]) => ({
         ipaddr,
